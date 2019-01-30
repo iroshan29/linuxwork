@@ -1,1 +1,1 @@
-export PS1="[\u@$(cat /home/centos/antaresvision/environment.id) \W]\\$ "
+export PS1="[\u@$(cat /home/centos/test/environment.id) \W]\\$ "
