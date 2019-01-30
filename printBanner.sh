@@ -46,9 +46,9 @@ cat << EOF
 ########################################################################
 EOF
 
-if [ -f /home/centos/antaresvision/environment.id ]; then
+if [ -f /home/centos/test/environment.id ]; then
         #Print environment id or machine name id the first is missing
-        a=$(cat /home/centos/antaresvision/environment.id)
+        a=$(cat /home/centos/test/environment.id)
         h=$(hostname)
         figlet -f big ${a:-$h}
 else
@@ -58,10 +58,10 @@ cat << EOF1
 # !!!!!! ERROR !!!!!!! THIS INSTANCE HAS NO ID
 #
 # EDIT THE FILE
-#                /home/centos/antaresvision/environment.id
+#                /home/centos/test/environment.id
 #
 # AND RUN
-#                 /home/centos/antaresvision/scripts/updateBanner.sh
+#                 /home/centos/test/scripts/updateBanner.sh
 #
 ########################################################################
 EOF1
